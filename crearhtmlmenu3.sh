@@ -16,7 +16,7 @@ header_text="Mi web/blog para trastear con el DOM"
 nav_links=("LINK 1" "LINK 2" "LINK 3")
 section_title="Titulo de la seccion"
 article_title="Titulo del articulo h3"
-article_content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda expedita tenetur omnis maiores reiciendis nulla quia, ad obcaecati, ea delectus eum aliquam vero aperiam nisi, sapiente itaque corporis exercitationem."
+article_content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assume...">
 footer_text="2022 Desarrollo útil"
 
 # Nombre del archivo HTML de salida
@@ -35,7 +35,7 @@ html_content=$(cat <<EOF
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: "$body_font";
+            font-family: $body_font;
         }
 
         header {
@@ -130,6 +130,4 @@ EOF
 )
 
 # Crear el archivo HTML
-echo "$html_content" > "$output_file"
-
-echo "Archivo HTML generado: $output_file"
+echo "$html_content" >
