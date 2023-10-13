@@ -1,0 +1,42 @@
+
+Plataforma	Plan	Precio anual	Precio 2º año
+Squarespace	Personal	12 USD/mes	12 USD/mes
+Squarespace	Business	18 USD/mes	18 USD/mes
+Squarespace	Commerce	26 USD/mes	26 USD/mes
+Wix	Basic	13 USD/mes	13 USD/mes
+Wix	Connect	18 USD/mes	18 USD/mes
+Wix	Business Unlimited	27 USD/mes	27 USD/mes
+Shopify	Basic Shopify	29 USD/mes	29 USD/mes
+Shopify	Shopify	79 USD/mes	79 USD/mes
+Shopify	Advanced Shopify	299 USD/mes	299 USD/mes
+Site123	Personal	9 USD/mes	9 USD/mes
+Site123	Business	19 USD/mes	19 USD/mes
+Site123	Premium	29 USD/mes	29 USD/mes
+Ecwid	Lite	5 USD/mes	5 USD/mes
+Ecwid	Pro	29 USD/mes	29 USD/mes
+Ecwid	Business	49 USD/mes	49 USD/mes
+Ghost	Personal	29 USD/mes	29 USD/mes
+Ghost	Pro	99 USD/mes	99 USD/mes
+PrestaShop	Starter	9,99 EUR/mes	9,99 EUR/mes
+PrestaShop	Professional	79,99 EUR/mes	79,99 EUR/mes
+PrestaShop	Enterprise	249,99 EUR/mes	249,99 EUR/mes
+Blogger	Gratuito	Gratis	Gratis
+Webflow	Solo	16 USD/mes	16 USD/mes
+Webflow	Team	35 USD/mes	35 USD/mes
+Webflow	Business	99 USD/mes	99 USD/mes
+Builderall	Business	29,99 USD/mes	29,99 USD/mes
+Builderall	Premium	49,99 USD/mes	49,99 USD/mes
+Builderall	Business Pro	99,99 USD/mes	99,99 USD/mes
+
+Nota: Los precios pueden variar en función de la moneda y el país de facturación.
+
+Análisis:
+
+    Squarespace y Wix son las plataformas más asequibles, con precios anuales que comienzan en 12 USD/mes.
+    Shopify es la plataforma más cara para empresas de comercio electrónico, con precios anuales que comienzan en 29 USD/mes.
+    Ghost y Blogger son plataformas de blogs gratuitas.
+    Builderall es una plataforma de marketing todo en uno con precios anuales que comienzan en 29,99 USD/mes.
+
+Recomendación:
+
+La plataforma más adecuada para ti dependerá de tus necesidades y presupuesto. Si estás buscando una plataforma sencilla y asequible para crear un sitio web básico, Squarespace o Wix son buenas opciones. Si necesitas una plataforma más potente para crear un sitio web de comercio electrónico o un blog avanzado, Shopify, Ghost o Builderall pueden ser mejores opciones
