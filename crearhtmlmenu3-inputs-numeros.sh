@@ -1,16 +1,59 @@
 #!/bin/bash
 
-# Variables para estilos CSS
-body_font="Verdana, Geneva, Tahoma, sans-serif"
-border_color="gray"
-header_background_color="lightgray"
-link_color="blue"
-header_font_size="24px"
-nav_padding="12px"
-section_margin="10px"
-article_line_height="1.5"
-footer_background_color="lightblue"
+# Función para preguntar al usuario si desea modificar valores
+function modificarValores() {
+    read -p "¿Deseas modificar los valores CSS y HTML? (S/N): " respuesta
+    if [ "$respuesta" == "S" ] || [ "$respuesta" == "s" ]; then
+        mostrarOpciones
+        while true; do
+            read -p "Selecciona el número de la opción que deseas modificar (0 para finalizar): " opcion
+            if [ "$opcion" -eq 0 ]; then
+                break
+            elif [ "$opcion" -eq 1 ]; then
+                read -p "Nueva fuente para el cuerpo (por ejemplo, 'Arial, sans-serif'): " body_font
+            elif [ "$opcion" -eq 2 ]; then
+                read -p "Nuevo color de borde (por ejemplo, 'red'): " border_color
+            elif [ "$opcion" -eq 3 ]; then
+                read -p "Nuevo color de fondo para el encabezado (por ejemplo, 'lightblue'): " header_background_color
+            elif [ "$opcion" -eq 4 ]; then
+                read -p "Nuevo color de enlaces (por ejemplo, 'green'): " link_color
+            elif [ "$opcion" -eq 5 ]; then
+                read -p "Nuevo tamaño de fuente para el encabezado (por ejemplo, '28px'): " header_font_size
+            elif [ "$opcion" -eq 6 ]; then
+                read -p "Nuevo relleno para la navegación (por ejemplo, '16px'): " nav_padding
+            elif [ "$opcion" -eq 7 ]; then
+                read -p "Nuevo margen para las secciones (por ejemplo, '20px'): " section_margin
+            elif [ "$opcion" -eq 8 ]; then
+                read -p "Nueva altura de línea para los títulos de artículo (por ejemplo, '1.6'): " article_line_height
+            elif [ "$opcion" -eq 9 ]; then
+                read -p "Nuevo color de fondo para el pie de página (por ejemplo, 'lightgray'): " footer_background_color
+            fi
+        done
+        echo "Valores modificados con éxito."
+    else
+        echo "Valores no modificados."
+    fi
+}
 
+# Función para mostrar las opciones disponibles
+function mostrarOpciones() {
+    echo "Opciones disponibles:"
+    echo "1. Nueva fuente para el cuerpo"
+    echo "2. Nuevo color de borde"
+    echo "3. Nuevo color de fondo para el encabezado"
+    echo "4. Nuevo color de enlaces"
+    echo "5. Nuevo tamaño de fuente para el encabezado"
+    echo "6. Nuevo relleno para la navegación"
+    echo "7. Nuevo margen para las secciones"
+    echo "8. Nueva altura de línea para los títulos de artículo"
+    echo "9. Nuevo color de fondo para el pie de página"
+    echo "0. Finalizar y aplicar cambios"
+}
+
+# Llamar a la función para preguntar si se deben modificar los valores
+modificarValores
+
+# Resto del script...
 # Variables para etiquetas HTML
 header_text="Mi web/blog para trastear con el DOM"
 nav_links=("LINK 1" "LINK 2" "LINK 3")
@@ -18,6 +61,9 @@ section_title="Titulo de la seccion"
 article_title="Titulo del articulo h3"
 article_content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda expedita tenetur omnis maiores reiciendis nulla quia, ad obcaecati, ea delectus eum aliquam vero aperiam nisi, sapiente itaque corporis exercitationem."
 footer_text="2022 Desarrollo útil"
+
+# Variables para etiquetas class
+claseheader="claseheader"
 
 # Nombre del archivo HTML de salida
 output_file="mi_pagina.html"
@@ -90,7 +136,7 @@ html_content=$(cat <<EOF
     <title>Dom</title>
 </head>
 <body>
-    <header id="header" class="border-grey" name="cabecera">
+    <header id="header" class="$claseheader" name="cabecera">
         <h1>$header_text</h1>
     </header>
     <nav class="border-grey">

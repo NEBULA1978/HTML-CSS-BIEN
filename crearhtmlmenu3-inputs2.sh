@@ -14,6 +14,8 @@ function modificarValores() {
         read -p "Nuevo margen para las secciones (por ejemplo, '20px'): " section_margin
         read -p "Nueva altura de línea para los títulos de artículo (por ejemplo, '1.6'): " article_line_height
         read -p "Nuevo color de fondo para el pie de página (por ejemplo, 'lightgray'): " footer_background_color
+        read -p "Nuevo color de fondo para el botón (por ejemplo, 'lightgreen'): " button_background_color
+        read -p "Nuevo color de texto para el botón (por ejemplo, 'white'): " button_text_color
         read -p "Nuevo valor para la clase del encabezado (por ejemplo, 'miClaseHeader'): " claseheader
         read -p "Nuevo valor para el ID del encabezado (por ejemplo, 'miIDHeader'): " idheader
         read -p "Nuevo valor para el ID del botón (por ejemplo, 'miIDBoton'): " idboton
